@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "939413121282",
+    "firebase_url": "https://contactnumbers-a5807.firebaseio.com",
+    "project_id": "contactnumbers-a5807",
+    "storage_bucket": "contactnumbers-a5807.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939413121282:android:e029f345460b5b0c037a1b",
+        "android_client_info": {
+          "package_name": "com.example.weusthemexercise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939413121282-jh4flints7os4ee9cc1s44l1eo6lku8h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK7kb8WqL0tHUQIlOdxw88oJn_hc6YKdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939413121282-jh4flints7os4ee9cc1s44l1eo6lku8h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

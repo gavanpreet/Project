@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextCName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/editTextLastName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/editTextCName1"
+        app:layout_constraintStart_toStartOf="@id/editTextCName1"
+        android:layout_marginTop="30dp"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:text="" />
+    <EditText
+        android:id="@+id/editTextemail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/editTextLastName1"
+        app:layout_constraintStart_toStartOf="@id/editTextLastName1"
+        android:layout_marginTop="30dp"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/editTextemail1"
+        app:layout_constraintStart_toStartOf="@id/editTextemail1"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/textViewImage1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toLeftOf="@id/buttonSelectImage1"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber1"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/textViewImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber1"
+        app:layout_constraintStart_toStartOf="@id/editTextPhoneNumber1"
+        app:layout_constraintTop_toTopOf="@id/imageView1"
+        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+        app:layout_constraintRight_toLeftOf="@id/imageView1"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+
+    <Button
+        android:id="@+id/buttonSelectImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/imageView1"
+        android:text="Select"
+        app:layout_constraintTop_toTopOf="@id/imageView1"
+        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonUpdate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="@id/textViewImage1"
+        app:layout_constraintTop_toBottomOf="@id/textViewImage1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

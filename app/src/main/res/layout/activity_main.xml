@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextCName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/editTextCName"
+        app:layout_constraintStart_toStartOf="@id/editTextCName"
+        android:layout_marginTop="30dp"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:text="" />
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/editTextLastName"
+        app:layout_constraintStart_toStartOf="@id/editTextLastName"
+        android:layout_marginTop="30dp"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/editTextemail"
+        app:layout_constraintStart_toStartOf="@id/editTextemail"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/textViewImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toLeftOf="@id/buttonSelectImage"
+
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/textViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhoneNumber"
+        app:layout_constraintStart_toStartOf="@id/editTextPhoneNumber"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintRight_toLeftOf="@id/imageView"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/imageView"
+        android:text="Select"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="@id/textViewImage"
+        app:layout_constraintTop_toBottomOf="@id/textViewImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:id="@+id/buttonShowContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/buttonAdd"
+        app:layout_constraintBottom_toBottomOf="@id/buttonAdd"
+        app:layout_constraintLeft_toRightOf="@id/buttonAdd"
+        android:text="Show Contacts"
+        android:textAllCaps="false"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
